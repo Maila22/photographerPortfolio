@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body.about {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 90vh;
+    width: 100vw;
+    background-image: url(img/neom-VJRruV21Fa8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+body.services {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 90vh;
+    width: 100vw;
+    background-image: url(img/servicesryoji-iwata-IBaVuZsJJTo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+body.contact {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 90vh;
+    width: 100vw;
+    background-image: url(img/serhat-beyazkaya-F0fBBz0Y-VM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+.summary{
+    font-size: 18px; 
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 400px;
+    line-height: 1;
+    color: black;
+    backdrop-filter: blur(3px);
+}
+
+body.index {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/underwater2neom-g_suks3yx-U-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+.quote{
+    font-size: 15px;
+    position: absolute;
+    right: 50%;
+    top: 20%;
+    width: 100px;
+    line-height: 2;
+    font-style: italic;
+    color: rgb(3, 3, 94);
+}
+
+.author {
+    font-style: normal;
+    font-weight: bold;
+    color: rgb(3, 3, 94);
+}
+
+.hireMe {
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    right: 60%;
+    top: 15%;
+}
+
+.contactInfo{
+    font-size: 20px;
+    position: absolute;
+    right: 50%;
+    top: 30%;
+}
+
+.hmu {
+    font-size: 25px;
+    position: absolute;
+    right: 17%;
+    top: 50%;
+    line-height: 1;
+}
+
+h2.wio{
+    font-size: 30px;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    backdrop-filter: blur(5px);
+}
+
+.offers {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    backdrop-filter: blur(5px);
+}
+#rates {
+    position: absolute;
+    left: 10%;
+    top: 51%;
+    backdrop-filter: blur(5px);
+}
+
+.listItems {
+    list-style: circle;
+    backdrop-filter: blur(5px);
+}
+
+.headingServ{
+    backdrop-filter: blur(5px);
+}
+
+.lang {
+    font-size: 30px;
+    position: absolute;
+    left: 5%;
+    top: 57%;
+    backdrop-filter: blur(5px);
+}
+
+#lang {
+    position: absolute;
+    left: 10%;
+    top: 63%;
+    backdrop-filter: blur(5px);
+}
+
+.rates{
+    font-size: 30px;
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    backdrop-filter: blur(5px);
+}
+
+header{
+    background-color: #34495e;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+footer .email:hover{
+    color: dodgerblue;
+    transition: 0.3s ease;
+}
+
+a.conEmail, .conInsta, .conTwitter{
+    color: black;
+    transition: 0.3s ease;
+}
+
+a.conEmail:hover, .conInsta:hover, .conTwitter:hover{
+    color: blueviolet;
+    transition: 0.3s ease;
+    border: none;
+}
+
+nav{
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: white;
+}
+
+a {
+    transition: 0.3s ease;
+}
+
+a:hover{
+    border: solid white 2px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media (max-width: 750px) {
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu{
+        position: fixed;
+        left: -100px;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #34495e;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .item{
+        margin: 16px 0;
+    }
+
+    .menu.active{
+        left: 0;
+    }
+}
+
+.heading{
+    font-size: 35px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-weight: bold;
+    color: rgb(3, 3, 94);
+    text-transform: uppercase;
+}
+
+.headingAB{
+    font-size: 35px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    backdrop-filter: blur(3px);
+}
+
+.headingServ{
+    font-size: 35px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #34495e;
+    color: white;
+    padding: 0.5em;
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    left: 0;
+    bottom:0
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 500px;
+    width: 800px;
+    align-items: center;
+    position: absolute;
+    right: -5%;
+}
+
+.gallery img{
+    height: 200px;
+    transition: all .3s ease;
+}
+
+.gallery img:hover {
+    box-shadow: 0px 5px 5px 2px rgb(0, 0, 0, 0.2);
+    scale: 1.1;
+}
+
